@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --cod-gray: rgba(8, 8, 10, 1);
+  --ship-gray: rgba(62, 63, 65, 1);
+  --cape-cod: rgba(63, 64, 66, 1);
+  --fern-green: rgba(73, 132, 49, 1);
+  --rose-of-sharon: rgba(190, 95, 0, 1);
+  --muddy-waters: rgba(192, 140, 92, 1);
+  --cararra: rgba(236, 234, 234, 1);
+  --wild-sand-2: rgba(242, 244, 247, 1);
+  --wild-sand: rgba(242, 244, 248, 1);
+  --desert-storm: rgba(248, 248, 248, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-m: 15px;
+  --font-size-l: 20px;
+  --font-size-xl: 21px;
+  --font-size-xxl: 25px;
+  --font-size-xxxl: 30px;
+  --font-size-xxxxl: 40px;
+  --font-size-xxxxxl: 50px;
+
+  --font-family-alfa_slab_one: "Alfa Slab One";
+  --font-family-raleway: "Raleway";
+}
+
+.alfaslabone-normal-muddy-waters-50px {
+  color: var(--muddy-waters);
+  font-family: var(--font-family-alfa_slab_one);
+  font-size: var(--font-size-xxxxxl);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.border-1px-black {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--black);
+}
+
+.raleway-normal-ship-gray-15px {
+  color: var(--ship-gray);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alfaslabone-normal-muddy-waters-40px {
+  color: var(--muddy-waters);
+  font-family: var(--font-family-alfa_slab_one);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-normal-black-15px {
+  color: var(--black);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alfaslabone-normal-black-30px {
+  color: var(--black);
+  font-family: var(--font-family-alfa_slab_one);
+  font-size: var(--font-size-xxxl);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-semi-bold-black-21px {
+  color: var(--black);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.alfaslabone-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-alfa_slab_one);
+  font-size: var(--font-size-xxxl);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-normal-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-normal-cape-cod-15px {
+  color: var(--cape-cod);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.x {
+  align-items: flex-start;
+  background-color: var(--cod-gray);
+  display: flex;
+  height: 900px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.overlap-group4 {
+  height: 917px;
+  position: relative;
+  width: 1770px;
+}
+
+.overlap-group3 {
+  height: 917px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1770px;
+}
+
+.chris-hardy-k-x-opo-unsplash-1 {
+  height: 914px;
+  left: 1086px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: 684px;
+}
+
+.signup-box {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 106px;
+  min-height: 547px;
+  position: absolute;
+  top: 214px;
+  width: 835px;
+}
+
+.overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 474px;
+  padding: 14px 22px;
+  position: relative;
+  width: 835px;
+}
+
+.overlap-group1 {
+  height: 103px;
+  margin-top: 8px;
+  position: relative;
+  width: 783px;
+}
+
+.rectangle-4 {
+  background-color: var(--wild-sand);
+  border-radius: 12px;
+  height: 63px;
+  left: 0;
+  position: absolute;
+  top: 40px;
+  width: 783px;
+}
+
+.login {
+  height: 41px;
+  left: 12px;
+  letter-spacing: 1.8px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.password-box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  min-height: 212px;
+  width: 787px;
+}
+
+.password {
+  height: 41px;
+  letter-spacing: 1.8px;
+  margin-left: 12px;
+  min-width: 167px;
+  text-align: center;
+}
+
+.rectangle-5 {
+  background-color: var(--wild-sand);
+  border-radius: 12px;
+  height: 64px;
+  width: 783px;
+}
+
+.text-1 {
+  color: var(--black);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  height: 29px;
+  letter-spacing: 1.5px;
+  margin-left: 12px;
+  margin-top: 15px;
+  min-width: 316px;
+  text-align: center;
+}
+
+.rectangle-6 {
+  background-color: var(--wild-sand);
+  border-radius: 12px;
+  height: 63px;
+  width: 783px;
+}
+
+.overlap-group {
+  align-items: center;
+  background-color: var(--fern-green);
+  border-radius: 12px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-top: 23px;
+  min-width: 337px;
+  padding: 4px 9px;
+}
+
+.create-an-account {
+  height: 41px;
+  letter-spacing: 1.8px;
+  min-width: 318px;
+  text-align: center;
+}
+
+.sign-up {
+  height: 55px;
+  left: 106px;
+  letter-spacing: 2.4px;
+  position: absolute;
+  text-align: center;
+  top: 115px;
+}
+
+.nav-bar {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  height: 56px;
+  left: 0;
+  min-width: 1440px;
+  padding: 0 14px;
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  align-self: flex-start;
+  height: 78px;
+  letter-spacing: 0;
+  margin-top: -11px;
+  width: 228px;
+}
+
+.overlap-group1-1 {
+  align-items: center;
+  background-color: var(--wild-sand);
+  border-radius: 12px;
+  display: flex;
+  height: 31px;
+  justify-content: center;
+  margin-left: 661px;
+  margin-top: 1px;
+  min-width: 76px;
+  padding: 0 9px;
+}
+
+.log-in {
+  height: 23px;
+  letter-spacing: 0;
+  min-width: 57px;
+}
+
+.overlap-group-1 {
+  align-items: center;
+  background-color: var(--wild-sand);
+  border-radius: 12px;
+  display: flex;
+  height: 31px;
+  justify-content: center;
+  margin-left: 31px;
+  margin-top: 1px;
+  min-width: 82px;
+  padding: 0 5.1px;
+}
+
+.sign-up-1 {
+  height: 23px;
+  letter-spacing: 0;
+  width: 71px;
+}
+
+.search-box {
+  align-items: center;
+  background-color: var(--wild-sand-2);
+  border-radius: 12px;
+  display: flex;
+  height: 31px;
+  margin-left: 67px;
+  margin-top: 1px;
+  overflow: hidden;
+  padding: 2px 0;
+  position: relative;
+  width: 259px;
+}
+
+.textlabel {
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: 16px;
+  min-height: 26px;
+  white-space: nowrap;
+}
+
+.search-icon {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1px;
+  margin-left: 11px;
+  min-width: 15px;
+}
+
+.search-icon-1 {
+  height: 16px;
+  margin-top: -0.17px;
+  width: 16px;
+}
+
+.email-box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 104px;
+  width: 785px;
+}
+
+.email {
+  height: 41px;
+  letter-spacing: 1.8px;
+  margin-left: 12px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.rectangle-4-1 {
+  background-color: var(--wild-sand);
+  border-radius: 12px;
+  height: 63px;
+  width: 783px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One:400|Raleway:400,600,800");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
