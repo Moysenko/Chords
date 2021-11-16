@@ -1,0 +1,107 @@
+.background_image {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.background_image img {
+    left: 1086px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 684px;
+}
+
+.nav-bar {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    height: 56px;
+    left: 0;
+    right: 0;
+    padding: 0 14px;
+    position: absolute;
+    top: 0;
+}
+
+.web_title {
+    align-self: flex-start;
+    height: 78px;
+    letter-spacing: 0;
+    margin-top: -11px;
+    width: 228px;
+    text-decoration: none;
+}
+
+.log_in-button {
+    align-items: center;
+    background-color: var(--wild-sand);
+    border-radius: 12px;
+    display: flex;
+    height: 31px;
+    justify-content: center;
+    margin-left: 661px;
+    margin-top: 1px;
+    min-width: 76px;
+    padding: 0 9px;
+}
+
+.navbar_button_link {
+    height: 23px;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+.sign_up-button {
+    align-items: center;
+    background-color: var(--wild-sand);
+    border-radius: 12px;
+    display: flex;
+    height: 31px;
+    justify-content: center;
+    margin-left: 31px;
+    margin-top: 1px;
+    min-width: 82px;
+    padding: 0 5.1px;
+}
+
+.search-box {
+    align-items: center;
+    background-color: var(--wild-sand-2);
+    border-radius: 12px;
+    display: flex;
+    height: 31px;
+    margin-left: 67px;
+    margin-top: 1px;
+    overflow: hidden;
+    padding: 2px 0;
+    position: relative;
+    width: 259px;
+}
+
+.searchbar_text {
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-left: 16px;
+    min-height: 26px;
+    white-space: nowrap;
+}
+
+.search-icon {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1px;
+    margin-left: 11px;
+    min-width: 15px;
+}
+
+.search-icon img {
+    height: 16px;
+    width: 16px;
+}
