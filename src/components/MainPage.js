@@ -11,10 +11,10 @@ export function MainPage() {
             </div>
             <div className="song-list-header">
                 <div className="song-name valign-text-middle raleway-normal-ship-gray-15px">
-                    Имя исполнителя - Название песни
+                    Singer - song name
                 </div>
                 <div className="clicks-number valign-text-middle raleway-normal-ship-gray-15px">
-                    Просмотры
+                    Views
                 </div>
             </div>
             <div className="elements-list">
