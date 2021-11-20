@@ -14,6 +14,7 @@ export function App() {
                 <BasePage/>
                 <Routes>
                     <Route path="/" element={<MainPage/>}/>
+                    <Route path="/chords" element={<MainPage/>}/>
                     <Route path="/search_results" element={<SearchResults/>}/>
                     <Route path="/sign_up" element={<SignUp/>}/>
                     <Route path="/log_in" element={<LogIn/>}/>
