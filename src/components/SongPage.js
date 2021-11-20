@@ -1,13 +1,36 @@
 import React, {useState} from 'react';
+import {animateScroll as scroll} from 'react-scroll';
 import "./SongPage.css"
-import arrow_up from "../assets/arrow_up.svg"
 import arrow_down from "../assets/arrow_down.svg"
+import arrow_up from "../assets/arrow_up.svg"
 import minus from "../assets/minus.svg"
 import plus from "../assets/plus.svg"
 
 export function SongPage() {
     const [fontSize, setFontSize] = useState(13);
     const [scrollSpeed, setScrollSpeed] = useState(0);
+
+    function ModifyScroll(delta) {
+        const newScrollSpeed = scrollSpeed + delta;
+        const scrollOptions = {
+            smooth: 'linear',
+            containerId: "song-box",
+            isDynamic: true,
+            duration: function (scrollDistanceInPx) {
+                return 80 * scrollDistanceInPx / newScrollSpeed;
+            }
+        };
+
+        if (newScrollSpeed < 0) {
+            scroll.scrollToTop(scrollOptions);
+        } else if (newScrollSpeed > 0) {
+            scroll.scrollToBottom(scrollOptions);
+        } else {
+            scroll.scrollTo(0);
+        }
+        setScrollSpeed(newScrollSpeed);
+    }
+
     return (
         <>
             <div className="view-params">
@@ -16,9 +39,9 @@ export function SongPage() {
                         Autoscroll speed: {scrollSpeed}
                     </div>
                     <div className="scroll-regulator">
-                        <img src={arrow_up} onClick={() => setScrollSpeed(scrollSpeed - 1)}/>
+                        <img src={arrow_up} onClick={() => ModifyScroll(-1)}/>
                         <div className="vline"/>
-                        <img src={arrow_down} onClick={() => setScrollSpeed(scrollSpeed + 1)}/>
+                        <img src={arrow_down} onClick={() => ModifyScroll(1)}/>
                     </div>
                 </div>
 
@@ -33,7 +56,7 @@ export function SongPage() {
                     </div>
                 </div>
             </div>
-            <div className="song-box">
+            <div className="song-box" id="song-box">
                 <div className="song-title-singer">
                     Исполнитель - Название песни
                 </div>

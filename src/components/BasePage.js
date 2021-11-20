@@ -36,7 +36,7 @@ export function BasePage() {
                         <img src={search_icon}/>
                     </div>
 
-                    <form action="/search_results/" method="get" autoComplete="off">
+                    <form action="/search_results/" method="get" autoComplete="true">
                         <input
                             value={searchQuery}
                             onInput={e => setSearchQuery(e.target.value)}
@@ -46,8 +46,6 @@ export function BasePage() {
                             name="s"
                         />
                     </form>
-
-                    {/*<div className="searchbar_text raleway-normal-black-15px">Search...</div>*/}
                 </div>
             </div>
         </>

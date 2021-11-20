@@ -83,6 +83,15 @@
     width: 259px;
 }
 
+.search-box input {
+    background-color: transparent;
+    border: none;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
 .searchbar_text {
     letter-spacing: 0;
     line-height: 26px;
