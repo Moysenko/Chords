@@ -3,7 +3,7 @@ import {Link, useParams} from "react-router-dom";
 import "./MainPage.css"
 
 export function SearchResults() {
-    const { search } = window.location;
+    const {search} = window.location;
     const searchQuery = new URLSearchParams(search).get('s');
 
     return (

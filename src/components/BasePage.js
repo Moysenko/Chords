@@ -5,13 +5,13 @@ import guitar_back from "../assets/background.jpg";
 import "./BasePage.css"
 
 export function BasePage() {
-    const { search } = window.location;
+    const {search} = window.location;
     const query = new URLSearchParams(search).get('s');
     const [searchQuery, setSearchQuery] = useState(query || '');
 
     return (
         <>
-            <div className="background" />
+            <div className="background"/>
             <div className="background_image">
                 <img src={guitar_back}/>
             </div>
