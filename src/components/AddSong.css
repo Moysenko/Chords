@@ -1,0 +1,107 @@
+.singer-song-box {
+    background-color: var(--white);
+    position: absolute;
+    width: 1000px;
+    height: 45px;
+    left: 35px;
+    top: 65px;
+    border-radius: 7px 7px 0 0;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input-song-box {
+    background-color: var(--white);
+
+    position: absolute;
+    left: 35px;
+    top: 115px;
+    bottom: 80px;
+
+    overflow: hidden;
+
+    width: 1000px;
+
+    border-radius: 0 0 7px 7px;
+}
+
+.singer-box {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 15pt;
+}
+
+.singer-input {
+    width: 210px;
+    height: 25px;
+
+    font-size: 13pt;
+}
+
+.song-name-box {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 15pt;
+}
+
+.song-name-input {
+    width: 260px;
+    height: 25px;
+
+    font-size: 13pt;
+}
+
+.lyrics-and-chords {
+    position: relative;
+    width: 904px;
+    height: 10%;
+    left: 50px;
+    top: 13px;
+
+    font-size: 17pt;
+}
+
+.song-lyrics {
+    position: relative;
+    margin: 0 5% 5% 5%;
+
+    width: 90%;
+    height: 85%;
+
+    overflow: hidden;
+    overflow-y: scroll;
+    resize: none;
+
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.create-song-button {
+    position: absolute;
+    bottom: 17px;
+    left: 700px;
+
+    align-items: center;
+    background-color: var(--fern-green);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    height: 41px;
+    min-width: 318px;
+    text-align: center;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

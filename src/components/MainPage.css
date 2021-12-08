@@ -35,6 +35,25 @@
     justify-content: space-around;
 }
 
+.show-more-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 2px;
+
+    background: #FFFFFF;
+    border-radius: 2px 2px 9px 9px;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    cursor: pointer;
+}
+
 .song-list-header {
     left: 90px;
     position: absolute;

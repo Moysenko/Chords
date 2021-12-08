@@ -27,6 +27,7 @@
 }
 
 .scroll-regulator {
+    align-self: center;
     width: 60px;
     height: 25px;
 
@@ -46,6 +47,7 @@
 }
 
 .font-regulator {
+    align-self: center;
     width: 60px;
     height: 25px;
 
@@ -95,26 +97,57 @@
 
 .song-title-singer {
     position: relative;
-    width: 904px;
-    height: 57px;
-    left: 30px;
-    top: 10px;
+    margin-left: 30px;
+    margin-right: 5px;
 
-    color: var(--black);
     font-size: var(--font-size-xxxl);
     font-weight: 600;
     font-style: normal;
 }
 
+.song-header-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: 10px;
+    padding: 10px;
+
+    font-size: var(--font-size-xxxl);
+    font-weight: 600;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .song-chords {
     position: relative;
-    width: 904px;
-    height: 57px;
-    left: 30px;
-    top: 10px;
+    margin: 20px 30px 30px 30px;
 
-    color: var(--black);
     font-size: var(--font-size-xl);
     font-weight: 600;
     font-style: normal;
+
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.chords-grid {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chord-pic {
+    width: 70px;
+    height: auto;
 }

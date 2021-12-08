@@ -1,16 +1,19 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {fetchSongs} from '../actions/songs';
+import {fetchSongs, fetchSongsMore, fetchSong} from '../actions/songs';
 import {Link} from "react-router-dom";
 import "./MainPage.css"
 
 export function MainPage() {
     const dispatch = useDispatch();
     const songList = useSelector((state) => state.songs.songList);
+    const count = useSelector((state) => state.songs.count);
     const isError = useSelector((state) => state.songs.isError);
 
+    const ordering_query = "ordering=-views";
+
     React.useEffect(() => {
-        dispatch(fetchSongs());
+        dispatch(fetchSongs(ordering_query));
     }, []);
 
     if (isError) {
@@ -34,9 +37,18 @@ export function MainPage() {
             </div>
             <div className="elements-list">
                 {songList.map((songId) => (
-                    <SongCard id={songId} />
+                    <SongCard id={songId} key={songId}/>
                 ))}
-                {/*<SongCard singer='Исполнитель' song_name='Название песни' clicks_number='27'/>*/}
+                {songList.length < count && (
+                    <div className='song-card-box'>
+                        <div
+                            className='raleway-normal-ship-gray-15px show-more-button'
+                            onClick={() => dispatch(fetchSongsMore(ordering_query))}
+                        >
+                            Show more
+                        </div>
+                    </div>
+                )}
             </div>
         </>
     );
@@ -47,7 +59,7 @@ function SongCard(props) {
     const song = useSelector((state) => state.songs.songs[id]);
 
     return (
-        <Link to="/song_page">
+        <Link to={`/song/${song.id}`}>
             <div className="song-card-box">
                 <div className="song-card">
                     <div className="song-name valign-text-middle raleway-normal-ship-gray-15px">

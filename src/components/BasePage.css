@@ -19,35 +19,50 @@
 .nav-bar {
     align-items: center;
     background-color: var(--white);
-    display: flex;
     height: 56px;
     left: 0;
     right: 0;
     padding: 0 14px;
     position: absolute;
     top: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.right-nav-pannel {
+    align-items: center;
+    text-align: right;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .web_title {
     align-self: flex-start;
-    height: 78px;
+    height: 56px;
     letter-spacing: 0;
-    margin-top: -11px;
     width: 228px;
     text-decoration: none;
 }
 
-.log_in-button {
+.nav-bar-button {
     align-items: center;
     background-color: var(--wild-sand);
     border-radius: 12px;
     display: flex;
-    height: 31px;
+    height: 25px;
     justify-content: center;
-    margin-left: 661px;
-    margin-top: 1px;
-    min-width: 76px;
-    padding: 0 9px;
+    min-width: 80px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .navbar_button_link {
@@ -56,29 +71,15 @@
     text-decoration: none;
 }
 
-.sign_up-button {
-    align-items: center;
-    background-color: var(--wild-sand);
-    border-radius: 12px;
-    display: flex;
-    height: 31px;
-    justify-content: center;
-    margin-left: 31px;
-    margin-top: 1px;
-    min-width: 82px;
-    padding: 0 5.1px;
-}
-
 .search-box {
     align-items: center;
     background-color: var(--wild-sand-2);
     border-radius: 12px;
     display: flex;
     height: 31px;
-    margin-left: 67px;
+    margin-left: 5px;
     margin-top: 1px;
     overflow: hidden;
-    padding: 2px 0;
     position: relative;
     width: 259px;
 }
@@ -113,4 +114,8 @@
 .search-icon img {
     height: 16px;
     width: 16px;
+}
+
+.nav-username {
+    margin-right: 10px;
 }

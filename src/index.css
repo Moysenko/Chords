@@ -75,6 +75,14 @@ code {
     font-style: normal;
 }
 
+.error-text {
+    color: red;
+    font-family: var(--font-family-alfa_slab_one);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    font-style: normal;
+}
+
 .raleway-normal-black-15px {
     color: var(--black);
     font-family: var(--font-family-raleway);
@@ -96,6 +104,14 @@ code {
     font-family: var(--font-family-raleway);
     font-size: var(--font-size-xxxl);
     font-weight: 600;
+    font-style: normal;
+}
+
+.alfaslabone-normal-white-25px {
+    color: var(--white);
+    font-family: var(--font-family-alfa_slab_one);
+    font-size: var(--font-size-xxl);
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -263,6 +279,10 @@ code {
     height: 41px;
     min-width: 318px;
     text-align: center;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .page-title {
