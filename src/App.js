@@ -33,7 +33,7 @@ export function App() {
                 <BasePage isLogin={isLogin} user={user} setIsLogin={setIsLogin}/>
                 <Routes>
                     <Route path="/" element={<MainPage/>}/>
-                    <Route path="/Chords" element={<Navigate to='/' />} />
+                    <Route path="/ABBYY_Interfaces" element={<Navigate to='/' />} />
                     <Route path="/search_results/:searchQuery" element={<SearchResults/>}/>
                     <Route path="/sign_up" element={<SignUp setIsLogin={setIsLogin}/>}/>
                     <Route path="/log_in" element={<LogIn setIsLogin={setIsLogin}/>}/>
